@@ -13,9 +13,9 @@
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
-  --color-navy : #1a237e;
-  --color-dark-navy: #000051;
-  --color-light-navy: #534bae;
+  --color-navy : #1e394c;
+  --color-dark-navy: #0b2639;
+
   /* Font Size */
   --font-large: 48px;
   --font-medium: 28px;
@@ -82,6 +82,13 @@ p {
   margin: 4px 0;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 /* Navbar */
 #navbar {
   display: flex;
@@ -114,4 +121,32 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-navy);
+}
+
+#home {
+  background: url("imgs/navy\ background.png") center/cover no-repeat;
+  padding : 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-grey);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
 }
