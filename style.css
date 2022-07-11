@@ -102,7 +102,7 @@ button {
   background-color: var(--color-navy);
   align-items: center;
   color: var(--color-white);
-  padding: 16px;
+  padding: 8px;
 }
 
 .navbar__menu {
@@ -112,6 +112,7 @@ button {
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+  margin-left: 8px;
 }
 
 .navbar__menu__item {
@@ -430,4 +431,30 @@ button {
 
 .testimonial__speech-bubble a {
   color: var(--color-dark-navy);
+}
+
+/* Contact */
+#contact {
+  background-color: var(--color-navy);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+  color: var(--color-light-white);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-orange);
+  transition: all var(--animation__duration) ease;
 }
