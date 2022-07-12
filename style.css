@@ -106,6 +106,7 @@ button {
   padding: 8px;
   background-color: transparent;
   transition: all var(--animation__duration) ease-in-out;
+  z-index : 1;
 }
 
 #navbar.navbar--dark {
