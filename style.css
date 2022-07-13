@@ -356,6 +356,13 @@ button {
   justify-content: center;
   max-width: 1000px;
   margin: auto;
+  opacity : 1;
+  transition: all var(--animation__duration) ease-out;
+}
+
+.work__projects.anim-out {
+  opacity : 0.6;
+  transform: scale(0.96) translateY(40px);
 }
 
 .project {
@@ -367,6 +374,10 @@ button {
   height: 250px;
   margin: 2px;
   background-color: var(--color-super-grey);
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
