@@ -29,7 +29,7 @@ navbarMenu.addEventListener('click', (event)=> {
 //Handle click on "contact me" button on home
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', ()=> {
-  scrollIntoView('#contact');
+  scrollIntoView("#contact");
 });
 
 //Make home slowly fade to transparent as the window scrolls down
@@ -40,13 +40,23 @@ document.addEventListener('scroll', ()=> {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+//Show "arrow up" button when scrolling down
+const arrowBtn = document.querySelector('.button__arrow');
+document.addEventListener('scroll', ()=> {
+  if(window.scrollY > homeHeight) {
+    arrowBtn.classList.add('visible');
+  } else {
+    arrowBtn.classList.remove('visible');
+  }
+});
 
-
-
+arrowBtn.addEventListener('click', ()=> {
+  scrollIntoView("#home");
+});
 
 //function
 function scrollIntoView(selector) {
-  const scrollTo = document.querySelector('selector');
+  const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({behavior:"smooth"});
 };
 

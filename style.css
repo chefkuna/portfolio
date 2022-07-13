@@ -478,6 +478,26 @@ button {
   transition: all var(--animation__duration) ease;
 }
 
+/* Scroll - arrow up button */
+.button__arrow {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width : 60px;
+  height : 60px;
+  font-size: 50px;
+  color: var(--color-navy);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--animation__duration) ease-in;
+  border-radius: 50%;
+}
+
+.button__arrow.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
