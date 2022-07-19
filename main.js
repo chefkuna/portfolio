@@ -13,6 +13,7 @@ document.addEventListener('scroll', ()=>{
   } else {
     navbar.classList.remove('navbar--dark');
   }
+  navbarMenu.classList.remove('open');
 });
 
 //Handle scrolling when tapping on the navbar menu
@@ -25,6 +26,13 @@ navbarMenu.addEventListener('click', (event)=> {
   }
   scrollIntoView(link);
 });
+
+//Navbar toggle button for small screen
+const navbarHamburgerBtn = document.querySelector('.navbar__toggle-btn');
+navbarHamburgerBtn.addEventListener('click', ()=> {
+  navbarMenu.classList.toggle('open');
+})
+
 
 //Handle click on "contact me" button on home
 const homeContactBtn = document.querySelector('.home__contact');
